@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <Script>
+        document.write("첫번째 문제</br>")
+        for(var i=0; i<10; i++){
+            document.write(i)
+        }
+        document.write("</br>")
+        for(var i=0; i<10; i++){
+            document.write("+")
+        }
+        document.write("</br>두번째 문제</br>")
+
+        for(var i=0; i<10; i++){
+            if(i%2==0){
+                document.write("+")
+            }else{
+                document.write("-")
+            }
+        }
+        document.write("</br>세번째 문제</br>")
+
+        for(var i=0; i<10; i++){
+            document.write(i)
+            for(var j=0; j<10; j++){
+                document.write("-")
+            }
+            document.write("</br>")
+        }
+        document.write("</br>네번째 문제</br>")
+
+        for(var i=0; i<10; i++){
+            document.write(i)
+            for(var j = 0; j<10; j++){
+                if(i==j){
+                    document.write("*")
+                }else{
+                    document.write("-")
+                }
+            }
+            document.write("</br>")
+        }
+
+        document.write("</br>다섯번째 문제</br>")
+
+        for(var i=0; i<10; i++){
+            document.write(i)
+            for(var j =0; j<10; j++){
+                if(9-i==j){
+                    document.write("*")
+                }else{
+                    document.write("-")
+                }
+            }
+            document.write("</br>")
+        }
+        document.write("</br>여섯번째 문제</br>")
+
+        for(var i=0; i<10; i++){
+            document.write(i)
+            for(var j=0; j<10; j++){
+                if(9-i==j || i==j){
+                    document.write("*")
+                }else{
+                    document.write("-")
+                }
+            }
+            document.write("</br>")
+        }
+
+        document.write("</br>일곱번째 문제</br>")
+
+        for(var i=0; i<10; i++){
+            document.write(i)
+            for(var j=0; j<10; j++){
+                if(i==0 || i==9){
+                    document.write("*")
+                }else if(j==0||j==9){
+                    document.write("*")
+                }else{
+                    document.write("-")
+                }
+            }
+            document.write("</br>")
+        }
+        document.write("</br>여덟번째 문제</br>")
+
+        for(var i =0; i<5; i++){
+            for(var j =0; j<5; j++){
+                if(j+i>3){
+                    document.write("*")
+                }else{
+                    document.write("-")
+                }
+            }
+            for(var k =0; k<4; k++){
+                if(i>k){
+                    document.write("*")
+                }else{
+                    document.write("-")
+                }
+            }
+            document.write("</br>")
+        }
+        for(var i=0; i<4; i++){
+            for(var k =0; k<5; k++){
+                if(i+1<=k){
+                    document.write("*")
+                }else{
+                    document.write("-")
+                }
+            }
+            for(var j=1; j<5; j++){
+                if(i+1<5-j){
+                    document.write("*")
+                }else{
+                    document.write("-")
+                }
+            }
+            document.write("</br>")
+    }
+    </Script>
+</body>
+</html>
